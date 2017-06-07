@@ -74,7 +74,7 @@ namespace GestionLogin2
                     // paramètre
                     //changer de page 
                     
-                    rootFrame.Navigate(typeof(GestionEtudiantHub), e.Arguments);
+                    rootFrame.Navigate(typeof(Shell), e.Arguments);
                 }
                 // Vérifiez que la fenêtre actuelle est active
                 Window.Current.Activate();
