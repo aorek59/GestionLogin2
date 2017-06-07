@@ -1,0 +1,204 @@
+﻿<Page
+    x:Class="GestionLogin2.GestionEtudiantHub"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GestionLogin2"
+    xmlns:models="using:GestionLogin2.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          BorderBrush="Black"
+          BorderThickness="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Colonne1-->
+        <GridView ItemsSource="{x:Bind Salles}" IsItemClickEnabled="True" ItemClick="GridView_ItemClick" >
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="models:Salle">
+                    <StackPanel>
+                        <TextBlock FontSize="16" Text="{x:Bind Name}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        
+                   <ComboBox SelectionChanged="ComboBox_SelectionChanged" 
+                      VerticalAlignment="Bottom" Height="32" >
+                <ComboBoxItem Content="SNIR" IsSelected="True" />
+                <ComboBoxItem Content="PHOTO" />
+                <ComboBoxItem Content="AudioVisuel"  />
+
+            <TextBlock Name="ComboBoxResultTextBlock" />
+
+        
+
+        </ComboBox>
+
+        <TextBlock Text="Classe"
+                       FontSize="25"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Bottom" Margin="0,0,157,-1"/>
+
+        <!--/.Colonne1-->
+
+        <!--Colonne2-->
+        <Grid Grid.Column="1"
+              BorderBrush="Black"
+              BorderThickness="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!--Ligne boutons-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Name="Ajouter" 
+                        Content="Ajouter" 
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"/>
+
+                <Button Name="Modifier" 
+                        Content="Modifier"
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"/>
+
+                <Button Name="Supprimer" 
+                        Content="Supprimer" 
+                        Grid.Column="2"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"/>
+            </Grid>
+
+
+
+            <!--/.Ligne boutons-->
+
+            <!--Ligne nom salle-->
+            <Grid Height="200"
+                  Grid.Row="1"
+                  BorderBrush="Black"
+                  BorderThickness="1">
+
+                <TextBlock Name="SalleResult" 
+                       Text="{Binding Path=Salle}" 
+                       FontSize="64"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+            </Grid>
+            <!--/.Ligne nom salle-->
+
+            <!--ligne checkboxs-->
+            <Grid Grid.Row="2"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  BorderBrush="Black"
+                  BorderThickness="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- CheckBox -->
+
+                <CheckBox Name="Huit" 
+                  Content="8h - 9h" 
+                  VerticalAlignment="Top"  
+                  Margin="20"/>
+
+                <CheckBox Name="Neuf"
+                  Content="9h - 10h"
+                  VerticalAlignment="Top"
+                  Grid.Column="1"
+                  Margin="20"/>
+
+                <CheckBox Name="Dix"
+                  Content="10h - 11h"
+                  VerticalAlignment="Top"
+                  Grid.Column="2"
+                  Margin="20"/>
+
+                <CheckBox Name="Onze"
+                  Content="11h - 12h"
+                  VerticalAlignment="Top"
+                  Grid.Row="1"
+                  Margin="20"/>
+
+                <CheckBox Name="Douze"
+                  Content="12h - 13h"
+                  VerticalAlignment="Top"
+                  Grid.Row="1"
+                  Grid.Column="1"
+                  Margin="20"/>
+
+                <CheckBox Name="Treize"
+                  Content="13h - 14h"
+                  VerticalAlignment="Top"
+                  Grid.Row="1"
+                  Grid.Column="2"
+                  Margin="20"/>
+
+                <CheckBox Name="Quatorze"
+                  Content="14h - 15h"
+                  VerticalAlignment="Top"
+                  Grid.Row="1"
+                  Grid.Column="3"
+                  Margin="20"/>
+
+                <CheckBox Name="Quinze"
+                  Content="15h - 16h"
+                  VerticalAlignment="Top"
+                  Grid.Row="2"
+                  Margin="20"/>
+
+                <CheckBox Name="Seize"
+                  Content="16h - 17h"
+                  VerticalAlignment="Top"
+                  Grid.Row="2"
+                  Grid.Column="1"
+                  Margin="20"/>
+
+                <CheckBox Name="DixSept"
+                  Content="17h - 18h"
+                  VerticalAlignment="Top"
+                  Grid.Row="2"
+                  Grid.Column="2"
+                  Margin="20"/>
+            </Grid>
+            <!--/.ligne checkboxs-->
+
+            <!--ligne bouton ok-->
+            <StackPanel Orientation ="Horizontal"
+                        Grid.Row="3"
+                        BorderBrush="Black"
+                        BorderThickness="1">
+                <Button Content="Ok"
+                        Name="Ok"
+                        Margin="400,10,0,10"/>
+            </StackPanel>
+            <!--/.ligne bouton ok-->
+
+        </Grid>
+        <!--/.Colonne2-->
+
+    </Grid>
+</Page>
