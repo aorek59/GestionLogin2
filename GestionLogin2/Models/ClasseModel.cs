@@ -27,18 +27,23 @@ namespace GestionLogin2.Models
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
                 Nom = "Fake nom 1",
                 Prenom = "Fake prénom 1"
             });
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
+
                 Nom = "Fake nom 2",
                 Prenom = "Fake prénom 2"
             });
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
+
                 Nom = "Fake nom 3",
                 Prenom = "Fake prénom 3"
             });
@@ -53,18 +58,24 @@ namespace GestionLogin2.Models
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
+
                 Nom = "Fake nom 21",
                 Prenom = "Fake prénom 21"
             });
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
+
                 Nom = "Fake nom 22",
                 Prenom = "Fake prénom 22"
             });
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
+
                 Nom = "Fake nom 23",
                 Prenom = "Fake prénom 23"
             });
@@ -79,18 +90,24 @@ namespace GestionLogin2.Models
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
+
                 Nom = "Fake nom 31",
                 Prenom = "Fake prénom 31"
             });
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
+
                 Nom = "Fake nom 32",
                 Prenom = "Fake prénom 32"
             });
 
             classe.Eleves.Add(new EleveModel
             {
+                Date = "12/06/2017",
+
                 Nom = "Fake nom 33",
                 Prenom = "Fake prénom 33"
             });

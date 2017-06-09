@@ -36,7 +36,25 @@ namespace GestionLogin2
             var combo = (ComboBox)sender;
             var item = (ComboBoxItem)combo.SelectedItem;
             ComboBoxResultTextBlock.Text = item.Content.ToString();
+
+        }
+         private void ValiderButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ajouterlogo_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Ajouteretudiant));
+        }
+
+        private void AnnulerButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+            }
         }
     }
 }
+
 

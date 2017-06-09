@@ -23,6 +23,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
@@ -39,24 +40,31 @@
                      Grid.Row="1"
                      Grid.Column="1" 
                      BorderBrush="Black"
-                     BorderThickness="1"/>
+                     BorderThickness="1"
+                     x:Name="LoginTextBlock"/>
 
             <TextBlock Text="Mot de passe" 
                        Grid.Row="2"/>
-            
+
             <TextBox PlaceholderText="Mot de passe"
                      Margin="20,0,0,0"
                      Grid.Row="2"
                      Grid.Column="1"
                      BorderBrush="Black"
-                     BorderThickness="1"/>
+                     BorderThickness="1"
+                     x:Name="PasswordTextBlock"/>
 
             <Button Name="Connexion" 
                     Content="Connexion"       
                     Grid.Column="2"
                     Grid.Row="3"
                     Margin="200,0,0,0"
-                    HorizontalAlignment="Right"/>
+                    HorizontalAlignment="Right"
+                    Click="Connexion_Click"/>
+
+            <TextBlock Name="ErrorTextBlock" Foreground="Red"
+                       Grid.Row="4"
+                       Grid.ColumnSpan="2"/>
         </Grid>
     </Grid>
 

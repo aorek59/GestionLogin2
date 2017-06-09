@@ -19,7 +19,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Content="Validation des présents"
+            <Button Content="Historique des salles"
                     Click="PresentButton_Click"
                     Margin="10"/>
 

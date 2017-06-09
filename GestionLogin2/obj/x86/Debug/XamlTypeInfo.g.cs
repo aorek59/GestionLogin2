@@ -132,23 +132,25 @@ namespace GestionLogin2.GestionLogin2_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
-            _typeNameTable[0] = "GestionLogin2.GestionEtudiant";
+            _typeNameTable = new string[8];
+            _typeNameTable[0] = "GestionLogin2.Ajouteretudiant";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "GestionLogin2.GestionEtudiantHub";
-            _typeNameTable[4] = "GestionLogin2.MainPage";
-            _typeNameTable[5] = "GestionLogin2.PresentPage";
-            _typeNameTable[6] = "GestionLogin2.Shell";
+            _typeNameTable[3] = "GestionLogin2.GestionEtudiant";
+            _typeNameTable[4] = "GestionLogin2.GestionEtudiantHub";
+            _typeNameTable[5] = "GestionLogin2.MainPage";
+            _typeNameTable[6] = "GestionLogin2.PresentPage";
+            _typeNameTable[7] = "GestionLogin2.Shell";
 
-            _typeTable = new global::System.Type[7];
-            _typeTable[0] = typeof(global::GestionLogin2.GestionEtudiant);
+            _typeTable = new global::System.Type[8];
+            _typeTable[0] = typeof(global::GestionLogin2.Ajouteretudiant);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::GestionLogin2.GestionEtudiantHub);
-            _typeTable[4] = typeof(global::GestionLogin2.MainPage);
-            _typeTable[5] = typeof(global::GestionLogin2.PresentPage);
-            _typeTable[6] = typeof(global::GestionLogin2.Shell);
+            _typeTable[3] = typeof(global::GestionLogin2.GestionEtudiant);
+            _typeTable[4] = typeof(global::GestionLogin2.GestionEtudiantHub);
+            _typeTable[5] = typeof(global::GestionLogin2.MainPage);
+            _typeTable[6] = typeof(global::GestionLogin2.PresentPage);
+            _typeTable[7] = typeof(global::GestionLogin2.Shell);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -183,11 +185,12 @@ namespace GestionLogin2.GestionLogin2_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_GestionEtudiant() { return new global::GestionLogin2.GestionEtudiant(); }
-        private object Activate_3_GestionEtudiantHub() { return new global::GestionLogin2.GestionEtudiantHub(); }
-        private object Activate_4_MainPage() { return new global::GestionLogin2.MainPage(); }
-        private object Activate_5_PresentPage() { return new global::GestionLogin2.PresentPage(); }
-        private object Activate_6_Shell() { return new global::GestionLogin2.Shell(); }
+        private object Activate_0_Ajouteretudiant() { return new global::GestionLogin2.Ajouteretudiant(); }
+        private object Activate_3_GestionEtudiant() { return new global::GestionLogin2.GestionEtudiant(); }
+        private object Activate_4_GestionEtudiantHub() { return new global::GestionLogin2.GestionEtudiantHub(); }
+        private object Activate_5_MainPage() { return new global::GestionLogin2.MainPage(); }
+        private object Activate_6_PresentPage() { return new global::GestionLogin2.PresentPage(); }
+        private object Activate_7_Shell() { return new global::GestionLogin2.Shell(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -199,9 +202,9 @@ namespace GestionLogin2.GestionLogin2_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  GestionLogin2.GestionEtudiant
+            case 0:   //  GestionLogin2.Ajouteretudiant
                 userType = new global::GestionLogin2.GestionLogin2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_GestionEtudiant;
+                userType.Activator = Activate_0_Ajouteretudiant;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -214,30 +217,37 @@ namespace GestionLogin2.GestionLogin2_XamlTypeInfo
                 xamlType = new global::GestionLogin2.GestionLogin2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  GestionLogin2.GestionEtudiantHub
+            case 3:   //  GestionLogin2.GestionEtudiant
                 userType = new global::GestionLogin2.GestionLogin2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_GestionEtudiantHub;
+                userType.Activator = Activate_3_GestionEtudiant;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  GestionLogin2.MainPage
+            case 4:   //  GestionLogin2.GestionEtudiantHub
                 userType = new global::GestionLogin2.GestionLogin2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_GestionEtudiantHub;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  GestionLogin2.PresentPage
+            case 5:   //  GestionLogin2.MainPage
                 userType = new global::GestionLogin2.GestionLogin2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_PresentPage;
+                userType.Activator = Activate_5_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  GestionLogin2.Shell
+            case 6:   //  GestionLogin2.PresentPage
                 userType = new global::GestionLogin2.GestionLogin2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_Shell;
+                userType.Activator = Activate_6_PresentPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  GestionLogin2.Shell
+                userType = new global::GestionLogin2.GestionLogin2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -610,3 +610,18 @@ D:\Verdier Arthur\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Present
 D:\Verdier Arthur\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.xaml
 D:\Verdier Arthur\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.xbf
 D:\Verdier Arthur\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\PresentPage.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\Shell.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.g.i.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.g.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.g.i.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.g.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.xaml
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.xaml
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.g.i.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.g.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.xaml
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\Ajouteretudiant.xbf

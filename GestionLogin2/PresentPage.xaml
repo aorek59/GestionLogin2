@@ -13,15 +13,17 @@
                       x:DataType="models:EleveModel">
             <Grid>
                 <Grid.ColumnDefinitions>
+
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
+
                 </Grid.ColumnDefinitions>
 
-                <CheckBox />
-
+                <TextBlock Text="{x:Bind Date}" Margin="10"/>
                 <TextBlock Text="{x:Bind Nom}" Margin="10" Grid.Column="1" />
                 <TextBlock Text="{x:Bind Prenom}" Margin="10" Grid.Column="2" />
+               
             </Grid>
         </DataTemplate>
 
@@ -34,6 +36,8 @@
                       x:DataType="models:ClasseModel">
             <TextBlock Text="{x:Bind Nom}" />
         </DataTemplate>
+
+
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -43,7 +47,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Validation des présent"
+        <TextBlock Text="Historique"
                    Style="{StaticResource TitleTextBlockStyle}"
                    Margin="12" />
 
@@ -62,8 +66,6 @@
                       Header="Selectionnez une salle"
                       ItemsSource="{x:Bind Salles}"
                       ItemTemplate="{StaticResource SalleTemplate}"/>
-
-
 
             <ComboBox x:Name="SelectionClasse"
                       Header="Selectionnez une classe"
@@ -84,9 +86,11 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="Présent" Margin="10" />
+                <TextBlock Text="Date/Heure" Margin="10" />
                 <TextBlock Text="Nom" Margin="10" Grid.Column="1" />
                 <TextBlock Text="Prénom" Margin="10" Grid.Column="2" />
+
+          
 
                 <ListView x:Name="EleveListView"
                       Grid.Row="1"

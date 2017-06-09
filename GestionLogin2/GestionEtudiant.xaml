@@ -12,93 +12,37 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="*"/>
+
 
 
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="320*" />
-            <ColumnDefinition Width="320*" />
-            <ColumnDefinition Width="320*" />
-            <ColumnDefinition Width="127*"/>
-            <ColumnDefinition Width="193*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Gestion Etudiant" 
-                   FontSize="32" 
-                   Grid.ColumnSpan="2" 
-                   Margin="203,10" 
-                   HorizontalAlignment="Center" Grid.Column="1" />
+        <TextBlock Text="Gestion Etudiant"
+                   Style="{StaticResource TitleTextBlockStyle}"
+                   Margin="12" 
+                   HorizontalAlignment="Left"  />
 
-        <Border BorderBrush="Black"
-                BorderThickness="1" 
-                HorizontalAlignment="Left" 
-                Height="43" 
-                Margin="158,10,0,0" 
-                VerticalAlignment="Top" 
-                Width="320" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Click="ajouterlogo_Click"
+                HorizontalAlignment="Right"
+                FontFamily="Segoe MDL2 Assets"
+                Name="ajouterlogo"
+              Content="&#xE710;"  
+                Grid.Column="2"
+                
+                />
 
-        <TextBlock Grid.Row="2" 
-                   Text="Nom :   "
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Right" Grid.ColumnSpan="2" Margin="10,11,400,11"/>
-
-        <TextBox Grid.Row="2"   
-                 Grid.Column="1"
-                 Margin="0,0,20,10" />
+    
 
         <TextBlock Grid.Row="3" 
-                   Text="Prenom :   " 
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Right" Grid.ColumnSpan="2" Margin="0,11,400,11"/>
-
-        <TextBox Grid.Row="3" 
-                 Grid.Column="1" 
-                 Margin="0,0,20,10" />
-
-        <TextBlock Grid.Row="2" 
-                   Grid.Column="2" 
-                   Text="Code RFID : " 
-                   VerticalAlignment="Center" Margin="0,11" />
-
-        <TextBox Grid.Row="2"
-                 Grid.Column="2" 
-                 Margin="100,0,0,10"/>
-
-        <TextBlock Grid.Row="3" 
-                   Grid.Column="2" 
                    Text="Classe" 
                    VerticalAlignment="Center" Margin="0,11"/>
-
-        <Button Grid.Row="5" 
-                Grid.Column="1" 
-                Content="Ajouter" 
-                HorizontalAlignment="Right" VerticalAlignment="Stretch" />
-
-        <TextBlock x:Name="textBlock" 
-                   HorizontalAlignment="Left" 
-                   TextWrapping="Wrap" 
-                   Text="Recherche"
-                   VerticalAlignment="Bottom" Grid.Column="2"
-                   Grid.Row="5" Grid.ColumnSpan="2" Margin="296,0,0,0"/>
-        <TextBox Name="Recherche"
-                 HorizontalAlignment="Right"
-                 VerticalAlignment="Bottom"
-                 Grid.Row="5"
-                 Grid.Column="3"
-                 />
-
-        <TextBlock Grid.Row="3" 
-                   Grid.Column="1" 
-                   Text="" 
-                   VerticalAlignment="Center" Margin="0,11" />
 
         <TextBlock Grid.Row="3" 
                    Text="" 
@@ -107,12 +51,10 @@
 
         <StackPanel Orientation="Horizontal" 
                     Grid.Row="3" 
-                    Grid.Column="2" 
                     Margin="100,0,0,10">
 
-
             <ComboBox SelectionChanged="ComboBox_SelectionChanged" 
-                      VerticalAlignment="Bottom" Height="32">
+                      VerticalAlignment="Center" Height="32">
                 <ComboBoxItem Content="SNIR" IsSelected="True" />
                 <ComboBoxItem Content="PHOTO" />
                 <ComboBoxItem Content="AudioVisuel"  />
@@ -122,71 +64,32 @@
             <TextBlock Name="ComboBoxResultTextBlock" />
         </StackPanel>
 
-
-
-        <!-- Grille -->
-
-        <Grid BorderBrush="Black"
-              
-                  BorderThickness="1,1,1,1"
-              Grid.Row="7"
-              Grid.ColumnSpan="5" Margin="100,0,100,100">
+        <Grid Grid.Row="1"
+                  Grid.ColumnSpan="2" Grid.Column="1" Margin="43,612,-44,-612">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="2*"/>
-
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Border BorderBrush="Black"
-                        BorderThickness="0,0,1,0">
+            <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="10,10,275,-10">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Content="Annuler"
+                    HorizontalAlignment="Center"
+                    Click="AnnulerButton_Click"
+                        Margin="10"/>
 
-                <Button Content="Nom"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Top"
-                        BorderBrush="Black"/>
-            </Border>
-
-            <Border     BorderBrush="Black"
-                        BorderThickness="0,0,1,0"
-                        Grid.Column="1">
-
-                <Button Content="Prénom"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Top"
-                        BorderBrush="Black"/>
-            </Border>
-
-            <Border     BorderBrush="Black"
-                        BorderThickness="0,0,1,0"
-                        Grid.Column="2">
-
-                <Button Content="Filière"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Top"
-                        BorderBrush="Black"/>
-            </Border>
-
-            <Button     Content="Code RFID"
-                        HorizontalAlignment="Stretch"   
-                        Grid.Column="3" 
-                        VerticalAlignment="Top"
-                        BorderBrush="Black"/>
-
-
-
-
-
+                    <Button Content="Valider"
+                    HorizontalAlignment="Center"
+                    Click="ValiderButton_Click"
+                        Margin="10"/>
+                </StackPanel>
+                
+            </Grid>
         </Grid>
-
-
-    </Grid>
+        </Grid>
 </Page>

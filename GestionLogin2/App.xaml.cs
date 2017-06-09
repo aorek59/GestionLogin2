@@ -74,7 +74,7 @@ namespace GestionLogin2
                     // paramètre
                     //changer de page 
                     
-                    rootFrame.Navigate(typeof(Shell), e.Arguments);
+                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
                 }
                 // Vérifiez que la fenêtre actuelle est active
                 Window.Current.Activate();

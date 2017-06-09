@@ -22,9 +22,24 @@ namespace GestionLogin2
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private string Username = "florian";
+        private string Password = "Roberto";
+
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void Connexion_Click(object sender, RoutedEventArgs e)
+        {
+            if (LoginTextBlock.Text == Username && PasswordTextBlock.Text == Password)
+            {
+                Frame.Navigate(typeof(Shell));
+            }
+            else
+            {
+                ErrorTextBlock.Text = "Identifiant ou mot de passe introuvable";
+            }
         }
     }
 }

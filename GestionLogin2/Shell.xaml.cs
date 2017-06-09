@@ -39,7 +39,7 @@ namespace GestionLogin2
 
         private void EleveButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(GestionEtudiant));
         }
     }
 }

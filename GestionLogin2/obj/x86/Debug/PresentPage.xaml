@@ -13,15 +13,17 @@
                                                     >
             <Grid x:ConnectionId='4'>
                 <Grid.ColumnDefinitions>
+
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
+
                 </Grid.ColumnDefinitions>
 
-                <CheckBox />
-
-                <TextBlock x:ConnectionId='5'                     Margin="10" Grid.Column="1" />
-                <TextBlock x:ConnectionId='6'                        Margin="10" Grid.Column="2" />
+                <TextBlock x:ConnectionId='5'                      Margin="10"/>
+                <TextBlock x:ConnectionId='6'                     Margin="10" Grid.Column="1" />
+                <TextBlock x:ConnectionId='7'                        Margin="10" Grid.Column="2" />
+               
             </Grid>
         </DataTemplate>
 
@@ -34,6 +36,8 @@
                                                      >
             <TextBlock x:ConnectionId='2'                     />
         </DataTemplate>
+
+
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -43,7 +47,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Validation des présent"
+        <TextBlock Text="Historique"
                    Style="{StaticResource TitleTextBlockStyle}"
                    Margin="12" />
 
@@ -58,14 +62,12 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <ComboBox x:ConnectionId='9' x:Name="SelectionSalle"
+            <ComboBox x:ConnectionId='10' x:Name="SelectionSalle"
                       Header="Selectionnez une salle"
                                                    
                       ItemTemplate="{StaticResource SalleTemplate}"/>
 
-
-
-            <ComboBox x:ConnectionId='10' x:Name="SelectionClasse"
+            <ComboBox x:ConnectionId='11' x:Name="SelectionClasse"
                       Header="Selectionnez une classe"
                                                     
                       ItemTemplate="{StaticResource ClasseTemplate}"
@@ -84,11 +86,13 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="Présent" Margin="10" />
+                <TextBlock Text="Date/Heure" Margin="10" />
                 <TextBlock Text="Nom" Margin="10" Grid.Column="1" />
                 <TextBlock Text="Prénom" Margin="10" Grid.Column="2" />
 
-                <ListView x:ConnectionId='11' x:Name="EleveListView"
+          
+
+                <ListView x:ConnectionId='12' x:Name="EleveListView"
                       Grid.Row="1"
                       Grid.ColumnSpan="3"
                       ItemTemplate="{StaticResource EleveTemplate}">
@@ -104,12 +108,12 @@
 
         <Grid Grid.Row="2">
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                <Button x:ConnectionId='7' Content="Annuler"
+                <Button x:ConnectionId='8' Content="Annuler"
                     HorizontalAlignment="Center"
                                                
                         Margin="10"/>
 
-                <Button x:ConnectionId='8' Content="Valider"
+                <Button x:ConnectionId='9' Content="Valider"
                     HorizontalAlignment="Center"
                                                
                         Margin="10"/>

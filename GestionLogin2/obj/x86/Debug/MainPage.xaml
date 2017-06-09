@@ -23,6 +23,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
@@ -34,29 +35,36 @@
                        Grid.ColumnSpan="2"/>
 
             <TextBlock Text="Identifiant" Grid.Row="1"/>
-            <TextBox PlaceholderText="Identifiant"
+            <TextBox x:ConnectionId='1' PlaceholderText="Identifiant"
                      Margin="20,0,0,0"
                      Grid.Row="1"
                      Grid.Column="1" 
                      BorderBrush="Black"
-                     BorderThickness="1"/>
+                     BorderThickness="1"
+                     x:Name="LoginTextBlock"/>
 
             <TextBlock Text="Mot de passe" 
                        Grid.Row="2"/>
-            
-            <TextBox PlaceholderText="Mot de passe"
+
+            <TextBox x:ConnectionId='2' PlaceholderText="Mot de passe"
                      Margin="20,0,0,0"
                      Grid.Row="2"
                      Grid.Column="1"
                      BorderBrush="Black"
-                     BorderThickness="1"/>
+                     BorderThickness="1"
+                     x:Name="PasswordTextBlock"/>
 
-            <Button x:ConnectionId='1' Name="Connexion" 
+            <Button x:ConnectionId='3' Name="Connexion" 
                     Content="Connexion"       
                     Grid.Column="2"
                     Grid.Row="3"
                     Margin="200,0,0,0"
-                    HorizontalAlignment="Right"/>
+                    HorizontalAlignment="Right"
+                                           />
+
+            <TextBlock x:ConnectionId='4' Name="ErrorTextBlock" Foreground="Red"
+                       Grid.Row="4"
+                       Grid.ColumnSpan="2"/>
         </Grid>
     </Grid>
 
