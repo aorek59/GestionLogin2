@@ -52,7 +52,8 @@
                      Grid.Column="1"
                      BorderBrush="Black"
                      BorderThickness="1"
-                     x:Name="PasswordTextBlock"/>
+                     x:Name="PasswordTextBlock"
+                     />
 
             <Button x:ConnectionId='3' Name="Connexion" 
                     Content="Connexion"       

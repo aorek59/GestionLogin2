@@ -625,3 +625,8 @@ C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\D
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.xaml
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.xbf
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\Ajouteretudiant.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.g.i.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.g.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.xaml
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\infoetudiant.xbf
