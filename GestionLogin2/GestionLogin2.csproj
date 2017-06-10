@@ -98,6 +98,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gestiondessalles.xaml.cs">
+      <DependentUpon>Gestiondessalles.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GestionEtudiant.xaml.cs">
       <DependentUpon>GestionEtudiant.xaml</DependentUpon>
     </Compile>
@@ -143,6 +146,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Ajouteretudiant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gestiondessalles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -20,26 +20,31 @@ namespace GestionLogin2
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class Shell : Page
+    public sealed partial class Gestiondessalles : Page
     {
-        public Shell()
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ComboBoxResultTextBlock == null) return;
+
+            var combo = (ComboBox)sender;
+            var item = (ComboBoxItem)combo.SelectedItem;
+            ComboBoxResultTextBlock.Text = item.Content.ToString();
+
+        }
+        public Gestiondessalles()
         {
             this.InitializeComponent();
         }
-
-        private void PresentButton_Click(object sender, RoutedEventArgs e)
+        private void ValiderButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(PresentPage));
+
         }
-
-        private void SalleButton_Click(object sender, RoutedEventArgs e)
+        private void AnnulerButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Gestiondessalles));
-        }
-
-        private void EleveButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(GestionEtudiant));
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+            }
         }
     }
 }

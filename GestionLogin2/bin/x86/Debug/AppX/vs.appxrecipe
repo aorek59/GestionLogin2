@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-09T12:27:55.596</Modified>
+      <Modified>2017-06-10T15:52:12.028</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\GestionLogin2.exe">
       <PackagePath>entrypoint\GestionLogin2.exe</PackagePath>
-      <Modified>2017-06-09T12:27:54.860</Modified>
+      <Modified>2017-06-10T15:52:09.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Florian.R\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -488,7 +488,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\GestionLogin2.xr.xml">
       <PackagePath>GestionLogin2.xr.xml</PackagePath>
-      <Modified>2017-06-09T12:24:36.777</Modified>
+      <Modified>2017-06-10T15:52:09.479</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-09T12:27:55.397</Modified>
+      <Modified>2017-06-10T15:52:11.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\Core\GestionLogin2.exe">
       <PackagePath>GestionLogin2.exe</PackagePath>
-      <Modified>2017-06-09T12:27:55.591</Modified>
+      <Modified>2017-06-10T15:52:12.014</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

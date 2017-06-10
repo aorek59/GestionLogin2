@@ -630,3 +630,8 @@ C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\D
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.xaml
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.xbf
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\infoetudiant.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\bin\x86\Debug\Gestiondessalles.xbf
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.g.i.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.g.cs
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.xaml
+C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.xbf
