@@ -25,28 +25,26 @@ namespace GestionLogin2
     /// </summary>
     public sealed partial class GestionEtudiant : Page
     {
+       
+        public List<Salle> Salles;
+        public List<ClasseModel> Classes;
 
         public GestionEtudiant()
         {
             this.InitializeComponent();
-
-
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (ComboBoxResultTextBlock == null) return;
-
-            var combo = (ComboBox)sender;
-            var item = (ComboBoxItem)combo.SelectedItem;
-            ComboBoxResultTextBlock.Text = item.Content.ToString();
+            Salles = SalleManager.GetSalles();
+            Classes = ClasseManager.GetClasses();
+            
 
         }
+
         private void SelectionClasse_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var classe = e.AddedItems[0] as ClasseModel;
             EleveListView.ItemsSource = classe.Eleves;
         }
+
+
         private void ValiderButton_Click(object sender, RoutedEventArgs e)
         {
 
