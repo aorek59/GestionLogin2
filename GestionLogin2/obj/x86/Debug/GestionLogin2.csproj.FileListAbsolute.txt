@@ -635,3 +635,44 @@ C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\D
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.g.cs
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.xaml
 C:\Users\Florian.R\Desktop\IHM Projet 2017\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionLogin2.csprojResolveAssemblyReference.cache
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\App.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\App.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionEtudiant.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionEtudiant.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionEtudiantHub.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionEtudiantHub.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\MainPage.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.g.i.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\App.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionEtudiant.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionEtudiantHub.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\MainPage.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.xaml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\App.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Ajouteretudiant.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Gestiondessalles.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionEtudiant.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionEtudiantHub.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\infoetudiant.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\MainPage.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\PresentPage.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\Shell.xbf
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionLogin2.exe
+C:\Users\averd\Source\Repos\GestionLogin2\GestionLogin2\obj\x86\Debug\GestionLogin2.pdb
