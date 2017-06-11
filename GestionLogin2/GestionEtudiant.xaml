@@ -22,8 +22,8 @@
                 </Grid.ColumnDefinitions>
 
                
-                <TextBlock Text="{x:Bind Nom}" Margin="10" Grid.Column="1" />
-                <TextBlock Text="{x:Bind Prenom}" Margin="10" Grid.Column="2" />
+                <TextBlock Text="{x:Bind Nom}" Margin="10" HorizontalAlignment="Center"/>
+                <TextBlock Text="{x:Bind Prenom}" Margin="10" Grid.Column="1" HorizontalAlignment="Center" />
 
             </Grid>
         </DataTemplate>
@@ -60,7 +60,7 @@
         <!--Titre de la page-->
         <TextBlock Text="Gestion Etudiant"
                    Style="{StaticResource TitleTextBlockStyle}"
-                   Margin="12" />
+                   Margin="12,12,0,12" HorizontalAlignment="Left" Width="1200" />
         <!--/.Titre de la page-->
 
         <Grid Grid.Row="1"
@@ -77,8 +77,8 @@
             <ComboBox x:Name="SelectionSalle"
                       Header="Selectionnez une salle"
                       SelectionChanged="SelectionClasse_SelectionChanged"
-                      ItemsSource="{x:Bind Salles}"
-                      ItemTemplate="{StaticResource SalleTemplate}"/>
+                      ItemsSource="{x:Bind Classes}"
+                      ItemTemplate="{StaticResource ClasseTemplate}"/>
 
             <!--Tableau des eleves (cette partie a copier)-->
             <Grid Grid.Row="1"
