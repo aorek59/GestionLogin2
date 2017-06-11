@@ -22,6 +22,7 @@ namespace GestionLogin2
     /// </summary>
     public sealed partial class GestionEtudiant : Page
     {
+
         public GestionEtudiant()
         {
             this.InitializeComponent();
