@@ -1,6 +1,7 @@
 ﻿using GestionLogin2.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -37,10 +38,13 @@ namespace GestionLogin2
             
 
         }
-
+  
         private void SelectionClasse_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
             var classe = e.AddedItems[0] as ClasseModel;
+            Debug.WriteLine(classe);
+            Debug.WriteLine(classe.Eleves);
             EleveListView.ItemsSource = classe.Eleves;
         }
 
