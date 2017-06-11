@@ -5,8 +5,37 @@
     xmlns:local="using:GestionLogin2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:GestionLogin2.Models"
     mc:Ignorable="d">
 
+       <Page.Resources>
+        <DataTemplate x:Key="EleveTemplate"
+                                                    >
+            <Grid x:ConnectionId='2'>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+
+                <TextBlock x:ConnectionId='3'                      Margin="10"/>
+                <TextBlock x:ConnectionId='4'                     Margin="10" Grid.Column="1" />
+                <TextBlock x:ConnectionId='5'                        Margin="10" Grid.Column="2" />
+
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ClasseTemplate"
+                                                     >
+            <TextBlock x:ConnectionId='1'                     />
+        </DataTemplate>
+
+
+    </Page.Resources>
+    
+    
     <Grid Background="White">
 
         <Grid.RowDefinitions>
@@ -26,12 +55,13 @@
                    Margin="12" 
                    HorizontalAlignment="Left"  />
 
-        <Button x:ConnectionId='1'                          
+        <Button x:ConnectionId='6'                          
                 HorizontalAlignment="Right"
                 FontFamily="Segoe MDL2 Assets"
                 Name="ajouterlogo"
               Content="&#xE710;"  
                 Grid.Column="2"/>
+
 
     
 
@@ -39,7 +69,7 @@
                    Text="Classe" 
                    VerticalAlignment="Center" Margin="0,11"/>
 
-        <TextBlock x:ConnectionId='2' Grid.Row="3" 
+        <TextBlock x:ConnectionId='7' Grid.Row="3" 
                    Text="" 
                    Name="MyComboBox"  
                    VerticalAlignment="Center" Margin="0,11" />
@@ -48,7 +78,7 @@
                     Grid.Row="3" 
                     Margin="100,0,0,10">
 
-            <ComboBox x:ConnectionId='5'                                              
+            <ComboBox x:ConnectionId='10'                                              
                       VerticalAlignment="Center" Height="32">
                 <ComboBoxItem Content="SNIR" IsSelected="True" />
                 <ComboBoxItem Content="PHOTO" />
@@ -56,7 +86,7 @@
 
             </ComboBox>
 
-            <TextBlock x:ConnectionId='6' Name="ComboBoxResultTextBlock" />
+            <TextBlock x:ConnectionId='11' Name="ComboBoxResultTextBlock" />
         </StackPanel>
         
         
@@ -75,16 +105,18 @@
 
             <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="10,10,275,-10">
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Button x:ConnectionId='3' Content="Annuler"
+                    <Button x:ConnectionId='8' Content="Annuler"
                     HorizontalAlignment="Center"
                                                
                         Margin="10"/>
 
-                    <Button x:ConnectionId='4' Content="Valider"
+                    <Button x:ConnectionId='9' Content="Valider"
                     HorizontalAlignment="Center"
                                                
                         Margin="10"/>
                 </StackPanel>
+                
+                
                 
             </Grid>
         </Grid>

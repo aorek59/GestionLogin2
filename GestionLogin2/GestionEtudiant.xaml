@@ -5,8 +5,37 @@
     xmlns:local="using:GestionLogin2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:GestionLogin2.Models"
     mc:Ignorable="d">
 
+       <Page.Resources>
+        <DataTemplate x:Key="EleveTemplate"
+                      x:DataType="models:EleveModel">
+            <Grid>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="{x:Bind Date}" Margin="10"/>
+                <TextBlock Text="{x:Bind Nom}" Margin="10" Grid.Column="1" />
+                <TextBlock Text="{x:Bind Prenom}" Margin="10" Grid.Column="2" />
+
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ClasseTemplate"
+                      x:DataType="models:ClasseModel">
+            <TextBlock Text="{x:Bind Nom}" />
+        </DataTemplate>
+
+
+    </Page.Resources>
+    
+    
     <Grid Background="White">
 
         <Grid.RowDefinitions>
@@ -32,6 +61,7 @@
                 Name="ajouterlogo"
               Content="&#xE710;"  
                 Grid.Column="2"/>
+
 
     
 
@@ -85,6 +115,8 @@
                     Click="ValiderButton_Click"
                         Margin="10"/>
                 </StackPanel>
+                
+                
                 
             </Grid>
         </Grid>

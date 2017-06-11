@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
+
 // Pour plus d'informations sur le modèle d'élément Page vierge, voir la page http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace GestionLogin2
@@ -39,7 +41,12 @@ namespace GestionLogin2
             ComboBoxResultTextBlock.Text = item.Content.ToString();
 
         }
-         private void ValiderButton_Click(object sender, RoutedEventArgs e)
+        private void SelectionClasse_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var classe = e.AddedItems[0] as ClasseModel;
+            EleveListView.ItemsSource = classe.Eleves;
+        }
+        private void ValiderButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
