@@ -9,6 +9,8 @@
     mc:Ignorable="d">
 
     <Page.Resources>
+        
+        <!--Template pour l'affichage d'un eleve-->
         <DataTemplate x:Key="EleveTemplate"
                       x:DataType="models:EleveModel">
             <Grid>
@@ -26,6 +28,8 @@
                
             </Grid>
         </DataTemplate>
+        <!--/.Template pour l'affichage d'un eleve-->
+
 
         <DataTemplate x:Key="SalleTemplate"
                       x:DataType="models:Salle">
@@ -47,9 +51,11 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <!--Titre de la page-->
         <TextBlock Text="Historique"
                    Style="{StaticResource TitleTextBlockStyle}"
                    Margin="12" />
+        <!--/.Titre de la page-->
 
         <Grid Grid.Row="1"
               Margin="12">
@@ -74,6 +80,7 @@
                       SelectionChanged="SelectionClasse_SelectionChanged"
                       Grid.Column="1"/>
 
+            <!--Tableau des eleves (cette partie a copier)-->
             <Grid Grid.Row="1"
                   Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
@@ -86,12 +93,13 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
+                <!--Nom des colonnes du tableau-->
                 <TextBlock Text="Date/Heure" Margin="10" />
                 <TextBlock Text="Nom" Margin="10" Grid.Column="1" />
                 <TextBlock Text="Prénom" Margin="10" Grid.Column="2" />
-
-          
-
+                <!--/.Nom des colonnes du tableau-->
+                
+                <!--ListView-->
                 <ListView x:Name="EleveListView"
                       Grid.Row="1"
                       Grid.ColumnSpan="3"
@@ -102,7 +110,10 @@
                         </Style>
                     </ListView.ItemContainerStyle>
                 </ListView>
+                <!--/.ListView-->
+
             </Grid>
+            <!--/.Tableau des eleves (cette partie a copier)-->
             
         </Grid>
 
