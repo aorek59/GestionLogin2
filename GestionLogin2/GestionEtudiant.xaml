@@ -22,7 +22,7 @@
                 </Grid.ColumnDefinitions>
 
                
-                <TextBlock Text="{x:Bind Nom}" Margin="10" HorizontalAlignment="Center"/>
+                <TextBlock Text="{x:Bind Nom}" Margin="10" HorizontalAlignment="Center" />
                 <TextBlock Text="{x:Bind Prenom}" Margin="10" Grid.Column="1" HorizontalAlignment="Center" />
 
             </Grid>
@@ -75,7 +75,7 @@
             </Grid.ColumnDefinitions>
 
             <ComboBox x:Name="SelectionSalle"
-                      Header="Selectionnez une salle"
+                      Header="Selectionnez une classe"
                       SelectionChanged="SelectionClasse_SelectionChanged"
                       ItemsSource="{x:Bind Classes}"
                       ItemTemplate="{StaticResource ClasseTemplate}"/>
@@ -103,7 +103,8 @@
                 <ListView x:Name="EleveListView"
                       Grid.Row="1"
                       Grid.ColumnSpan="3"
-                      ItemTemplate="{StaticResource EleveTemplate}">
+                      ItemTemplate="{StaticResource EleveTemplate}"
+                          ItemClick="EleveListView_ItemClick">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch" />

@@ -48,7 +48,13 @@ namespace GestionLogin2
             EleveListView.ItemsSource = classe.Eleves;
         }
 
+        
 
+
+        private void EleveListView_ItemClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(infoetudiant));
+        }
         private void ValiderButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -64,6 +70,11 @@ namespace GestionLogin2
             {
                 Frame.GoBack();
             }
+        }
+
+        private void EleveListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }
