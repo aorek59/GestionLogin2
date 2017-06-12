@@ -25,7 +25,7 @@
 
         <TextBlock  Text="Salles disponibles"
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
+                    VerticalAlignment="Bottom"
                     Margin="320,0,0,0"/>
 
         <TextBlock Text="Ajouter de nouvelles salles"
@@ -45,7 +45,7 @@
             
             
             <ComboBox SelectionChanged="ComboBox_SelectionChanged" 
-                      VerticalAlignment="Stretch"
+                      VerticalAlignment="Bottom"
                       Height="32">
                 <ComboBoxItem Content="B01" IsSelected="True" />
                 <ComboBoxItem Content="B02" />
@@ -62,6 +62,11 @@
 
         <Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="319,92,321,-92">
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+
+                <Button Content="Supprimer"
+                    HorizontalAlignment="Center"
+                        Margin="10"/>
+
                 <Button Content="Annuler"
                     HorizontalAlignment="Center"
                     Click="AnnulerButton_Click"
